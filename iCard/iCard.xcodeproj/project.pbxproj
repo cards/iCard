@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64F38147163C41DB008E4452 /* PassesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F38146163C41DB008E4452 /* PassesTableViewController.m */; };
+		64F38149163C421A008E4452 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F38148163C421A008E4452 /* PassKit.framework */; };
+		64F38156163C4636008E4452 /* Red.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 64F38155163C4636008E4452 /* Red.pkpass */; };
+		64F3815C163C463F008E4452 /* BoardingPass.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 64F38157163C463F008E4452 /* BoardingPass.pkpass */; };
+		64F3815D163C463F008E4452 /* CardDivingMember.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 64F38158163C463F008E4452 /* CardDivingMember.pkpass */; };
+		64F3815E163C463F008E4452 /* ConcertTicket.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 64F38159163C463F008E4452 /* ConcertTicket.pkpass */; };
+		64F3815F163C463F008E4452 /* FreeHug.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 64F3815A163C463F008E4452 /* FreeHug.pkpass */; };
+		64F38160163C463F008E4452 /* GenericPass.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 64F3815B163C463F008E4452 /* GenericPass.pkpass */; };
 		A9E526481635D7EA00026EDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E526471635D7EA00026EDD /* UIKit.framework */; };
 		A9E5264A1635D7EA00026EDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E526491635D7EA00026EDD /* Foundation.framework */; };
 		A9E5264C1635D7EA00026EDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E5264B1635D7EA00026EDD /* CoreGraphics.framework */; };
@@ -17,7 +25,6 @@
 		A9E5265C1635D7EA00026EDD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9E5265B1635D7EA00026EDD /* Default@2x.png */; };
 		A9E5265E1635D7EA00026EDD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9E5265D1635D7EA00026EDD /* Default-568h@2x.png */; };
 		A9E526611635D7EA00026EDD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E5265F1635D7EA00026EDD /* MainStoryboard.storyboard */; };
-		A9E526641635D7EA00026EDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E526631635D7EA00026EDD /* ViewController.m */; };
 		A9E5266C1635D7EA00026EDD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E5266B1635D7EA00026EDD /* SenTestingKit.framework */; };
 		A9E5266D1635D7EA00026EDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E526471635D7EA00026EDD /* UIKit.framework */; };
 		A9E5266E1635D7EA00026EDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E526491635D7EA00026EDD /* Foundation.framework */; };
@@ -36,6 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		64F38145163C41DB008E4452 /* PassesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassesTableViewController.h; sourceTree = "<group>"; };
+		64F38146163C41DB008E4452 /* PassesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassesTableViewController.m; sourceTree = "<group>"; };
+		64F38148163C421A008E4452 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		64F38155163C4636008E4452 /* Red.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Red.pkpass; sourceTree = "<group>"; };
+		64F38157163C463F008E4452 /* BoardingPass.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = BoardingPass.pkpass; sourceTree = "<group>"; };
+		64F38158163C463F008E4452 /* CardDivingMember.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = CardDivingMember.pkpass; sourceTree = "<group>"; };
+		64F38159163C463F008E4452 /* ConcertTicket.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = ConcertTicket.pkpass; sourceTree = "<group>"; };
+		64F3815A163C463F008E4452 /* FreeHug.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = FreeHug.pkpass; sourceTree = "<group>"; };
+		64F3815B163C463F008E4452 /* GenericPass.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = GenericPass.pkpass; sourceTree = "<group>"; };
 		A9E526431635D7EA00026EDD /* iCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E526471635D7EA00026EDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A9E526491635D7EA00026EDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,8 +66,6 @@
 		A9E5265B1635D7EA00026EDD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A9E5265D1635D7EA00026EDD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A9E526601635D7EA00026EDD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		A9E526621635D7EA00026EDD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A9E526631635D7EA00026EDD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A9E5266A1635D7EA00026EDD /* iCardTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCardTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E5266B1635D7EA00026EDD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A9E526731635D7EA00026EDD /* iCardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iCardTests-Info.plist"; sourceTree = "<group>"; };
@@ -65,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64F38149163C421A008E4452 /* PassKit.framework in Frameworks */,
 				A9E526481635D7EA00026EDD /* UIKit.framework in Frameworks */,
 				A9E5264A1635D7EA00026EDD /* Foundation.framework in Frameworks */,
 				A9E5264C1635D7EA00026EDD /* CoreGraphics.framework in Frameworks */,
@@ -84,6 +99,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64F3814A163C45E8008E4452 /* MyPasses */ = {
+			isa = PBXGroup;
+			children = (
+				64F38155163C4636008E4452 /* Red.pkpass */,
+				64F38157163C463F008E4452 /* BoardingPass.pkpass */,
+				64F38158163C463F008E4452 /* CardDivingMember.pkpass */,
+				64F38159163C463F008E4452 /* ConcertTicket.pkpass */,
+				64F3815A163C463F008E4452 /* FreeHug.pkpass */,
+				64F3815B163C463F008E4452 /* GenericPass.pkpass */,
+			);
+			name = MyPasses;
+			sourceTree = "<group>";
+		};
 		A9E526381635D7EA00026EDD = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +134,7 @@
 		A9E526461635D7EA00026EDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				64F38148163C421A008E4452 /* PassKit.framework */,
 				A9E526471635D7EA00026EDD /* UIKit.framework */,
 				A9E526491635D7EA00026EDD /* Foundation.framework */,
 				A9E5264B1635D7EA00026EDD /* CoreGraphics.framework */,
@@ -117,11 +146,12 @@
 		A9E5264D1635D7EA00026EDD /* iCard */ = {
 			isa = PBXGroup;
 			children = (
+				64F3814A163C45E8008E4452 /* MyPasses */,
 				A9E526561635D7EA00026EDD /* AppDelegate.h */,
 				A9E526571635D7EA00026EDD /* AppDelegate.m */,
 				A9E5265F1635D7EA00026EDD /* MainStoryboard.storyboard */,
-				A9E526621635D7EA00026EDD /* ViewController.h */,
-				A9E526631635D7EA00026EDD /* ViewController.m */,
+				64F38145163C41DB008E4452 /* PassesTableViewController.h */,
+				64F38146163C41DB008E4452 /* PassesTableViewController.m */,
 				A9E5264E1635D7EA00026EDD /* Supporting Files */,
 			);
 			path = iCard;
@@ -236,6 +266,12 @@
 				A9E5265C1635D7EA00026EDD /* Default@2x.png in Resources */,
 				A9E5265E1635D7EA00026EDD /* Default-568h@2x.png in Resources */,
 				A9E526611635D7EA00026EDD /* MainStoryboard.storyboard in Resources */,
+				64F38156163C4636008E4452 /* Red.pkpass in Resources */,
+				64F3815C163C463F008E4452 /* BoardingPass.pkpass in Resources */,
+				64F3815D163C463F008E4452 /* CardDivingMember.pkpass in Resources */,
+				64F3815E163C463F008E4452 /* ConcertTicket.pkpass in Resources */,
+				64F3815F163C463F008E4452 /* FreeHug.pkpass in Resources */,
+				64F38160163C463F008E4452 /* GenericPass.pkpass in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +308,7 @@
 			files = (
 				A9E526541635D7EA00026EDD /* main.m in Sources */,
 				A9E526581635D7EA00026EDD /* AppDelegate.m in Sources */,
-				A9E526641635D7EA00026EDD /* ViewController.m in Sources */,
+				64F38147163C41DB008E4452 /* PassesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +483,7 @@
 				A9E5267E1635D7EA00026EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9E5267F1635D7EA00026EDD /* Build configuration list for PBXNativeTarget "iCardTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +492,7 @@
 				A9E526811635D7EA00026EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
