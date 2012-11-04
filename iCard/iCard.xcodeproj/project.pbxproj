@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6499C87B1646906E000EA8EC /* Red.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 6499C87A1646906E000EA8EC /* Red.pkpass */; };
+		6499C87E164692B4000EA8EC /* Test.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 6499C87D164692B4000EA8EC /* Test.pkpass */; };
 		64F38147163C41DB008E4452 /* PassesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F38146163C41DB008E4452 /* PassesTableViewController.m */; };
 		64F38149163C421A008E4452 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F38148163C421A008E4452 /* PassKit.framework */; };
-		64F38156163C4636008E4452 /* Red.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 64F38155163C4636008E4452 /* Red.pkpass */; };
 		64F3815C163C463F008E4452 /* BoardingPass.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 64F38157163C463F008E4452 /* BoardingPass.pkpass */; };
 		64F3815D163C463F008E4452 /* CardDivingMember.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 64F38158163C463F008E4452 /* CardDivingMember.pkpass */; };
 		64F3815E163C463F008E4452 /* ConcertTicket.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 64F38159163C463F008E4452 /* ConcertTicket.pkpass */; };
@@ -43,10 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6499C87A1646906E000EA8EC /* Red.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Red.pkpass; sourceTree = "<group>"; };
+		6499C87D164692B4000EA8EC /* Test.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Test.pkpass; sourceTree = "<group>"; };
 		64F38145163C41DB008E4452 /* PassesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassesTableViewController.h; sourceTree = "<group>"; };
 		64F38146163C41DB008E4452 /* PassesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassesTableViewController.m; sourceTree = "<group>"; };
 		64F38148163C421A008E4452 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
-		64F38155163C4636008E4452 /* Red.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Red.pkpass; sourceTree = "<group>"; };
 		64F38157163C463F008E4452 /* BoardingPass.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = BoardingPass.pkpass; sourceTree = "<group>"; };
 		64F38158163C463F008E4452 /* CardDivingMember.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = CardDivingMember.pkpass; sourceTree = "<group>"; };
 		64F38159163C463F008E4452 /* ConcertTicket.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = ConcertTicket.pkpass; sourceTree = "<group>"; };
@@ -102,7 +104,8 @@
 		64F3814A163C45E8008E4452 /* MyPasses */ = {
 			isa = PBXGroup;
 			children = (
-				64F38155163C4636008E4452 /* Red.pkpass */,
+				6499C87D164692B4000EA8EC /* Test.pkpass */,
+				6499C87A1646906E000EA8EC /* Red.pkpass */,
 				64F38157163C463F008E4452 /* BoardingPass.pkpass */,
 				64F38158163C463F008E4452 /* CardDivingMember.pkpass */,
 				64F38159163C463F008E4452 /* ConcertTicket.pkpass */,
@@ -266,12 +269,13 @@
 				A9E5265C1635D7EA00026EDD /* Default@2x.png in Resources */,
 				A9E5265E1635D7EA00026EDD /* Default-568h@2x.png in Resources */,
 				A9E526611635D7EA00026EDD /* MainStoryboard.storyboard in Resources */,
-				64F38156163C4636008E4452 /* Red.pkpass in Resources */,
 				64F3815C163C463F008E4452 /* BoardingPass.pkpass in Resources */,
 				64F3815D163C463F008E4452 /* CardDivingMember.pkpass in Resources */,
 				64F3815E163C463F008E4452 /* ConcertTicket.pkpass in Resources */,
 				64F3815F163C463F008E4452 /* FreeHug.pkpass in Resources */,
 				64F38160163C463F008E4452 /* GenericPass.pkpass in Resources */,
+				6499C87B1646906E000EA8EC /* Red.pkpass in Resources */,
+				6499C87E164692B4000EA8EC /* Test.pkpass in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
