@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ThePassbook.h"
 
 @implementation AppDelegate
 

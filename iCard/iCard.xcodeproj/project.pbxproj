@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640A362516621E1500479CD1 /* ThePassbook.m in Sources */ = {isa = PBXBuildFile; fileRef = 640A362416621E1500479CD1 /* ThePassbook.m */; };
 		6499C87B1646906E000EA8EC /* Red.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 6499C87A1646906E000EA8EC /* Red.pkpass */; };
 		6499C87E164692B4000EA8EC /* Test.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 6499C87D164692B4000EA8EC /* Test.pkpass */; };
 		64F38147163C41DB008E4452 /* PassesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F38146163C41DB008E4452 /* PassesTableViewController.m */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		640A362316621E1500479CD1 /* ThePassbook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThePassbook.h; path = "Passbook Structure/ThePassbook.h"; sourceTree = "<group>"; };
+		640A362416621E1500479CD1 /* ThePassbook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThePassbook.m; path = "Passbook Structure/ThePassbook.m"; sourceTree = "<group>"; };
 		6499C87A1646906E000EA8EC /* Red.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Red.pkpass; sourceTree = "<group>"; };
 		6499C87D164692B4000EA8EC /* Test.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Test.pkpass; sourceTree = "<group>"; };
 		64F38145163C41DB008E4452 /* PassesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassesTableViewController.h; sourceTree = "<group>"; };
@@ -101,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		640A362116621DD100479CD1 /* Passbook Structure */ = {
+			isa = PBXGroup;
+			children = (
+				640A362316621E1500479CD1 /* ThePassbook.h */,
+				640A362416621E1500479CD1 /* ThePassbook.m */,
+			);
+			name = "Passbook Structure";
+			sourceTree = "<group>";
+		};
 		64F3814A163C45E8008E4452 /* MyPasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +161,7 @@
 		A9E5264D1635D7EA00026EDD /* iCard */ = {
 			isa = PBXGroup;
 			children = (
+				640A362116621DD100479CD1 /* Passbook Structure */,
 				64F3814A163C45E8008E4452 /* MyPasses */,
 				A9E526561635D7EA00026EDD /* AppDelegate.h */,
 				A9E526571635D7EA00026EDD /* AppDelegate.m */,
@@ -313,6 +326,7 @@
 				A9E526541635D7EA00026EDD /* main.m in Sources */,
 				A9E526581635D7EA00026EDD /* AppDelegate.m in Sources */,
 				64F38147163C41DB008E4452 /* PassesTableViewController.m in Sources */,
+				640A362516621E1500479CD1 /* ThePassbook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
