@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		640A362516621E1500479CD1 /* ThePassbook.m in Sources */ = {isa = PBXBuildFile; fileRef = 640A362416621E1500479CD1 /* ThePassbook.m */; };
+		6462F2F91670256300808E72 /* com.passslot.sdk.PassSlotSDK.docset in Resources */ = {isa = PBXBuildFile; fileRef = 6462F2F71670256300808E72 /* com.passslot.sdk.PassSlotSDK.docset */; };
+		6462F2FA1670256300808E72 /* PassSlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6462F2F81670256300808E72 /* PassSlot.framework */; };
 		6499C87B1646906E000EA8EC /* Red.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 6499C87A1646906E000EA8EC /* Red.pkpass */; };
 		6499C87E164692B4000EA8EC /* Test.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 6499C87D164692B4000EA8EC /* Test.pkpass */; };
 		64F38147163C41DB008E4452 /* PassesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F38146163C41DB008E4452 /* PassesTableViewController.m */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		640A362316621E1500479CD1 /* ThePassbook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThePassbook.h; path = "Passbook Structure/ThePassbook.h"; sourceTree = "<group>"; };
 		640A362416621E1500479CD1 /* ThePassbook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThePassbook.m; path = "Passbook Structure/ThePassbook.m"; sourceTree = "<group>"; };
+		6462F2F71670256300808E72 /* com.passslot.sdk.PassSlotSDK.docset */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = com.passslot.sdk.PassSlotSDK.docset; sourceTree = "<group>"; };
+		6462F2F81670256300808E72 /* PassSlot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PassSlot.framework; sourceTree = "<group>"; };
 		6499C87A1646906E000EA8EC /* Red.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Red.pkpass; sourceTree = "<group>"; };
 		6499C87D164692B4000EA8EC /* Test.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Test.pkpass; sourceTree = "<group>"; };
 		64F38145163C41DB008E4452 /* PassesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassesTableViewController.h; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 				A9E526481635D7EA00026EDD /* UIKit.framework in Frameworks */,
 				A9E5264A1635D7EA00026EDD /* Foundation.framework in Frameworks */,
 				A9E5264C1635D7EA00026EDD /* CoreGraphics.framework in Frameworks */,
+				6462F2FA1670256300808E72 /* PassSlot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +139,8 @@
 				A9E526711635D7EA00026EDD /* iCardTests */,
 				A9E526461635D7EA00026EDD /* Frameworks */,
 				A9E526441635D7EA00026EDD /* Products */,
+				6462F2F71670256300808E72 /* com.passslot.sdk.PassSlotSDK.docset */,
+				6462F2F81670256300808E72 /* PassSlot.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -289,6 +296,7 @@
 				64F38160163C463F008E4452 /* GenericPass.pkpass in Resources */,
 				6499C87B1646906E000EA8EC /* Red.pkpass in Resources */,
 				6499C87E164692B4000EA8EC /* Test.pkpass in Resources */,
+				6462F2F91670256300808E72 /* com.passslot.sdk.PassSlotSDK.docset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +437,10 @@
 		A9E5267D1635D7EA00026EDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCard/iCard-Prefix.pch";
 				INFOPLIST_FILE = "iCard/iCard-Info.plist";
@@ -440,6 +452,10 @@
 		A9E5267E1635D7EA00026EDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCard/iCard-Prefix.pch";
 				INFOPLIST_FILE = "iCard/iCard-Info.plist";
