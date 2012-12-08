@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3Lv-Ue-XFa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3Lv-Ue-XFa">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
         <!--Passes Table View Controller-->
@@ -40,7 +40,123 @@
             </objects>
             <point key="canvasLocation" x="51" y="224"/>
         </scene>
+        <!--Passes Collection View Controller-->
+        <scene sceneID="gr1-eZ-VxS">
+            <objects>
+                <collectionViewController storyboardIdentifier="PassesCollection" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ten-H6-UPX" customClass="PassesCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="5zr-Qc-lE4">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qMV-oX-cJB">
+                            <size key="itemSize" width="123" height="153"/>
+                            <size key="headerReferenceSize" width="50" height="56"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PassCollectionViewCell" id="AW1-JX-Kpm" customClass="PassCollectionViewCell">
+                                <rect key="frame" x="0.0" y="56" width="123" height="153"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="123" height="153"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="rtV-vM-ewU">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="116" id="OrC-iC-xyG"/>
+                                                <constraint firstAttribute="width" constant="118" id="R4I-C5-q1p"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5U-Yz-J6p">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="116" id="A7E-QY-IWg"/>
+                                                <constraint firstAttribute="height" constant="21" id="ZI1-Yq-q0O"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                                            <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="H5U-Yz-J6p" firstAttribute="top" secondItem="rtV-vM-ewU" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="9fb-qA-66R"/>
+                                    <constraint firstItem="rtV-vM-ewU" firstAttribute="centerX" secondItem="H5U-Yz-J6p" secondAttribute="centerX" type="default" id="a4M-Uj-iNH"/>
+                                    <constraint firstItem="rtV-vM-ewU" firstAttribute="centerX" secondItem="AW1-JX-Kpm" secondAttribute="centerX" type="default" id="alv-UG-CW6"/>
+                                    <constraint firstItem="rtV-vM-ewU" firstAttribute="top" secondItem="AW1-JX-Kpm" secondAttribute="top" constant="3" id="ebn-K1-euq"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="passImageView" destination="rtV-vM-ewU" id="32w-Ha-Rp9"/>
+                                    <outlet property="passTitle" destination="H5U-Yz-J6p" id="NpT-zy-Eci"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PassCellectionCell" id="zBf-Rj-ntr">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="Ten-H6-UPX" id="Fbh-TT-QFO"/>
+                            <outlet property="delegate" destination="Ten-H6-UPX" id="jBa-UL-mBA"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GNG-uJ-nIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="213"/>
+        </scene>
+        <!--Passes Test View Controller-->
+        <scene sceneID="VUo-wC-NgY">
+            <objects>
+                <viewController id="rCp-oM-tyq" customClass="PassesTestViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g4u-BS-evY">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ag-sH-Hpl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="930"/>
+        </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PassCollectionViewCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PassCollectionViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="passImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="passTitle" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="PassesCollectionViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PassesCollectionViewController.h"/>
+        </class>
+        <class className="PassesTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PassesTableViewController.h"/>
+        </class>
+        <class className="PassesTestViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PassesTestViewController.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
