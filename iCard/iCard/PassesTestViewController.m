@@ -8,6 +8,7 @@
 
 #import "PassesTestViewController.h"
 #import <PassSlot/PassSlot.h>
+#import <objc/objc-runtime.h>
 
 @interface PassesTestViewController ()
 
@@ -22,12 +23,15 @@
         // Custom initialization
     }
     return self;
+	
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+	
+	
 	[PassSlot createPassFromTemplateWithName:@"MokaPPGeneric" withValues:nil andRequestInstallation:self completion:^{
 		NSLog(@"PassLot addes");
 	}];

@@ -10,8 +10,10 @@
 		640A362516621E1500479CD1 /* ThePassbook.m in Sources */ = {isa = PBXBuildFile; fileRef = 640A362416621E1500479CD1 /* ThePassbook.m */; };
 		64600C861671726800A6CAC8 /* PassesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64600C851671726800A6CAC8 /* PassesCollectionViewController.m */; };
 		64600C8B167172BA00A6CAC8 /* PassCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64600C8A167172BA00A6CAC8 /* PassCollectionViewCell.m */; };
+		648506C3167CD209008E2661 /* PassService.m in Sources */ = {isa = PBXBuildFile; fileRef = 648506C2167CD209008E2661 /* PassService.m */; };
 		6499C87B1646906E000EA8EC /* Red.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 6499C87A1646906E000EA8EC /* Red.pkpass */; };
 		6499C87E164692B4000EA8EC /* Test.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 6499C87D164692B4000EA8EC /* Test.pkpass */; };
+		64A5DE3A16827800006B035B /* PassSlotService.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A5DE3916827800006B035B /* PassSlotService.m */; };
 		64EC0250167398E1003EDD0F /* PassesTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC024F167398E1003EDD0F /* PassesTestViewController.m */; };
 		64EC025216739A5D003EDD0F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EC025116739A5D003EDD0F /* CFNetwork.framework */; };
 		64EC02541673A6A0003EDD0F /* PassSlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EC02531673A6A0003EDD0F /* PassSlot.framework */; };
@@ -58,8 +60,13 @@
 		64600C851671726800A6CAC8 /* PassesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassesCollectionViewController.m; sourceTree = "<group>"; };
 		64600C89167172BA00A6CAC8 /* PassCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassCollectionViewCell.h; sourceTree = "<group>"; };
 		64600C8A167172BA00A6CAC8 /* PassCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassCollectionViewCell.m; sourceTree = "<group>"; };
+		648506C1167CD209008E2661 /* PassService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassService.h; sourceTree = "<group>"; };
+		648506C2167CD209008E2661 /* PassService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassService.m; sourceTree = "<group>"; };
+		648506C4167D06B1008E2661 /* PassServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassServiceProtocol.h; sourceTree = "<group>"; };
 		6499C87A1646906E000EA8EC /* Red.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Red.pkpass; sourceTree = "<group>"; };
 		6499C87D164692B4000EA8EC /* Test.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = Test.pkpass; sourceTree = "<group>"; };
+		64A5DE3816827800006B035B /* PassSlotService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassSlotService.h; sourceTree = "<group>"; };
+		64A5DE3916827800006B035B /* PassSlotService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassSlotService.m; sourceTree = "<group>"; };
 		64EC024E167398E1003EDD0F /* PassesTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassesTestViewController.h; sourceTree = "<group>"; };
 		64EC024F167398E1003EDD0F /* PassesTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassesTestViewController.m; sourceTree = "<group>"; };
 		64EC025116739A5D003EDD0F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -143,6 +150,34 @@
 			name = Objects;
 			sourceTree = "<group>";
 		};
+		64A5DE37168277E4006B035B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				64A5DE3816827800006B035B /* PassSlotService.h */,
+				64A5DE3916827800006B035B /* PassSlotService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		64B6BA3F16794A0700DE9547 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				648506C4167D06B1008E2661 /* PassServiceProtocol.h */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		64D7FC21167692AB0062B757 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				64A5DE37168277E4006B035B /* Services */,
+				64B6BA3F16794A0700DE9547 /* Interfaces */,
+				648506C1167CD209008E2661 /* PassService.h */,
+				648506C2167CD209008E2661 /* PassService.m */,
+			);
+			name = Business;
+			sourceTree = "<group>";
+		};
 		64F3814A163C45E8008E4452 /* MyPasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +230,7 @@
 		A9E5264D1635D7EA00026EDD /* iCard */ = {
 			isa = PBXGroup;
 			children = (
+				64D7FC21167692AB0062B757 /* Business */,
 				64600C881671728B00A6CAC8 /* Objects */,
 				640A362116621DD100479CD1 /* Passbook Structure */,
 				64F3814A163C45E8008E4452 /* MyPasses */,
@@ -369,6 +405,8 @@
 				64600C861671726800A6CAC8 /* PassesCollectionViewController.m in Sources */,
 				64600C8B167172BA00A6CAC8 /* PassCollectionViewCell.m in Sources */,
 				64EC0250167398E1003EDD0F /* PassesTestViewController.m in Sources */,
+				648506C3167CD209008E2661 /* PassService.m in Sources */,
+				64A5DE3A16827800006B035B /* PassSlotService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
